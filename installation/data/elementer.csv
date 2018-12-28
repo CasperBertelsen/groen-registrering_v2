@@ -1,0 +1,128 @@
+element_kode;elementnavn;objekt_type;tbl;enhedspris;aktiv
+{ANA};Anden anvendelse;{0,1,2};t;00.00;t
+{ANA,01};Udenfor drift og pleje;{0,1,2};t;00.00;t
+{ANA,01,01};Urtehave;{0,1,2};t;00.00;t
+{ANA,02};Privat have;{2};t;00.00;t
+{ANA,03};Kantsten;{1};t;00.00;t
+{BE};Belægning;{2};t;00.00;t
+{BE,01};Fast belægning;{2};t;00.00;t
+{BE,01,01};Asfalt;{2};t;00.00;t
+{BE,01,02};Beton;{2};t;00.00;t
+{BE,01,03};Natursten;{2};t;00.00;t
+{BE,01,04};Træ;{2};t;00.00;t
+{BE,02};Løs belægning;{2};t;00.00;t
+{BE,02,01};Sten;{2};t;00.00;t
+{BE,02,02};Skærver;{2};t;00.00;t
+{BE,02,03};Flis;{2};t;00.00;t
+{BE,02,04};Jord;{2};t;00.00;t
+{BE,03};Grus;{2};t;00.00;t
+{BE,04};Trimmet grus;{2};t;00.00;t
+{BE,05};Sportsbelægning;{2};t;00.00;t
+{BE,05,01};SB - Kunststof;{2};t;00.00;t
+{BE,05,02};SB - Kunstgræs;{2};t;00.00;t
+{BE,05,03};SB - Tennisgrus;{2};t;00.00;t
+{BE,05,04};SB - Slagger;{2};t;00.00;t
+{BE,05,05};SB - Stenmel;{2};t;00.00;t
+{BE,05,06};SB - Asfalt;{2};t;00.00;t
+{BE,06};Faldunderlag;{2};t;00.00;t
+{BE,06,01};Faldgrus;{2};t;00.00;t
+{BE,06,02};Faldsand;{2};t;00.00;t
+{BE,06,03};Gummifliser;{2};t;00.00;t
+{BE,06,04};Støbt gummi;{2};t;00.00;t
+{BL};Blomster;{};t;00.00;t
+{BL,01};Sommerblomster;{2};t;00.00;t
+{BL,02};Ampel;{0};t;00.00;t
+{BL,03};Plantekumme;{0};t;00.00;t
+{BL,04};Roser og stauder;{2};t;00.00;t
+{BL,05};Klatreplante;{1};t;00.00;t
+{BL,05,01};Solitær klatreplante;{0};t;00.00;t
+{BL,06};Urtehave;{2};f;00.00;f
+{BU};Buske;{};t;00.00;t
+{BU,01};Bunddækkende buske;{2};t;00.00;t
+{BU,02};Busket;{2};t;00.00;t
+{BU,03};Krat og hegn;{2};t;00.00;t
+{BU,04};Bunddækkende krat;{2};t;00.00;t
+{BU,05};Frugtbusk;{0};t;00.00;t
+{GR};Græs;{};t;00.00;t
+{GR,01};Brugsplæne;{2};t;00.00;t
+{GR,01,01};Brugsplæne - sport;{2};t;00.00;t
+{GR,02};Græsflade;{2};t;00.00;t
+{GR,03};Sportsplæne;{2};t;00.00;t
+{GR,04};Fælledgræs;{2};t;00.00;t
+{GR,04,01};Fælledgræs B;{2};t;00.00;t
+{GR,04,02};Fælledgræs - Tørbassin;{2};t;00.00;t
+{GR,05};Rabatgræs;{2};t;00.00;t
+{GR,06};Naturgræs;{2};t;00.00;t
+{GR,06,01};Naturgræs A;{2};t;00.00;t
+{GR,06,02};Naturgræs B;{2};t;00.00;t
+{GR,06,03};Naturgræs C;{2};t;00.00;t
+{GR,07};Græsning;{2};t;00.00;t
+{GR,08};Strand og klit;{2};t;00.00;t
+{GR,09};§3 Område;{2};t;00.00;t
+{GR,10};Særligt græsområde;{2};t;00.00;t
+{HA};Hække;{};t;00.00;t
+{HA,01};Hæk og pur;{2};t;00.00;t
+{HA,01,01};Hæk og pur - 2x klip;{2};t;00.00;t
+{HA,02};Hækkekrat;{2};t;00.00;t
+{TR};Træ;{};t;00.00;t
+{TR,01};Fritstående træ;{0};t;00.00;t
+{TR,02};Vejtræ;{0};t;00.00;t
+{TR,03};Trægruppe;{2};t;00.00;t
+{TR,04};Trærække;{0};t;00.00;t
+{TR,05};Formet træ;{0};t;00.00;t
+{TR,06};Frugttræ;{0};t;00.00;t
+{TR,07};Allé;{0};t;00.00;t
+{TR,08};Skov og lund;{2};t;00.00;t
+{TR,09};Fælledskov;{2};t;00.00;t
+{UD};Terrænudstyr;{0,1,2};t;00.00;t
+{UD,01};Udstyr;{0,1};f;00.00;f
+{UD,01,01};Skilt;{0};t;00.00;t
+{UD,01,02};Trafikbom;{0};t;00.00;t
+{UD,01,03};Pullert;{0,1};t;00.00;t
+{UD,01,04};Cykelstativ;{0,1};t;00.00;t
+{UD,01,05};Parklys;{0};t;00.00;t
+{UD,01,06};Banelys;{0};t;00.00;t
+{UD,01,07};Tagrende;{1};t;00.00;t
+{UD,01,08};Lyskasse;{0};t;00.00;t
+{UD,01,09};Faskine;{0};t;00.00;t
+{UD,01,10};Affaldscontainer;{0};t;00.00;t
+{UD,01,11};Shelterhytte;{0};t;00.00;t
+{UD,01,12};Træbro;{1};t;00.00;t
+{UD,01,13};Kampesten;{0};t;00.00;t
+{UD,01,14};Flagstang;{0};t;00.00;t
+{UD,02};Trappe;{2};t;00.00;t
+{UD,02,01};Betontrappe;{2};t;00.00;t
+{UD,02,02};Naturstenstrappe;{2};t;00.00;t
+{UD,02,03};Trappe - træ/jord;{2};t;00.00;t
+{UD,03};Terrænmur;{1};t;00.00;t
+{UD,03,01};Kampestensmur;{1};t;00.00;t
+{UD,03,02};Betonmur;{1};t;00.00;t
+{UD,03,03};Naturstensmur;{1};t;00.00;t
+{UD,03,04};Træmur;{1};t;00.00;t
+{UD,04};Bænk;{0};t;00.00;t
+{UD,04,01};Bord- og bænkesæt;{0};t;00.00;t
+{UD,05};Fast hegn;{1};t;00.00;t
+{UD,05,01};Trådhegn;{1};t;00.00;t
+{UD,05,02};Maskinflettet hegn;{1};t;00.00;t
+{UD,05,03};Træhegn;{1};t;00.00;t
+{UD,05,04};Fodhegn;{1};t;00.00;t
+{UD,06};Legeudstyr;{0};t;00.00;t
+{UD,06,01};Sandkasse;{2};t;00.00;t
+{UD,06,02};Kant - faldunderlag;{1};t;00.00;t
+{UD,06,03};Kant - sandkasse;{1};t;00.00;t
+{UD,07};Affald;{0};t;00.00;t
+{UD,07,01};Affaldsspand;{0};t;00.00;t
+{UD,07,02};Askebæger;{0};t;00.00;t
+{UD,07,03};Hundeposestativ;{0};t;00.00;t
+{UD,08};Busstop;{0};t;00.00;t
+{UD,09};Fitness;{0};t;00.00;t
+{UD,09,01};Fast sportsudstyr;{0};t;00.00;t
+{VA};Vand;{};t;00.00;t
+{VA,01};Bassin;{2};t;00.00;t
+{VA,01,01};Forbassin;{2};t;00.00;t
+{VA,01,02};Hovedbassin;{2};t;00.00;t
+{VA,01,03};Rørbassin;{2};t;00.00;t
+{VA,02};Vandhul;{2};t;00.00;t
+{VA,03};Sø og gadekær;{2};t;00.00;t
+{VA,04};Vandløb;{1};t;00.00;t
+{VA,05};Rørskov;{2};t;00.00;t

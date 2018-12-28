@@ -1,0 +1,6 @@
+driftniv_kode;driftniv;aktiv;begrebsdefinition;enhedspris_f;enhedspris_l;enhedspris_p
+1;Have;t;Bedste niveau;00.00;00.00;00.00
+2;Park;t;Mellemniveau;00.00;00.00;00.00
+3;Natur;t;Laveste niveau;00.00;00.00;00.00
+8;Andet;t;Hvor andre driftniveausbetegnelser ikke er dækkende.;00.00;00.00;00.00
+9;Ukendt;t;Mangler viden om niveau/anvender ikke driftniveauer.;00.00;00.00;00.00

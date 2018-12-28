@@ -1,0 +1,6 @@
+tilstand_kode;tilstand;aktiv;begrebsdefinition
+1;Dårlig;t;Udskiftning eller vedligeholdelse tiltrængt/påkrævet. Fungerer ikke efter hensigten eller i fare for det sker inden for kort tid.
+2;Middel;t;Fungerer efter hensigten, men kunne trænge til vedligeholdelse for at forlænge levetiden/funktionen
+3;God;t;Tæt på lige så god som et nyt.
+8;Andet;t;Anden tilstand end Dårlig, Middel, God eller Ukendt.
+9;Ukendt;t;Mangler viden til at kunne udfylde værdien med Dårlig, Middel eller God.

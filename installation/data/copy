@@ -1,0 +1,25 @@
+\copy basis.ansvarlig_myndighed	FROM 'data\ansvarlig_myndighed.csv'	DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.driftniv			FROM 'data\driftniv.csv'			DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.klip_sider			FROM 'data\klip_sider.csv'			DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.objekt_typer		FROM 'data\objekt_typer.csv'		DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.offentlig			FROM 'data\offentlig.csv'			DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.oprindelse			FROM 'data\oprindelse.csv'			DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.postnr				FROM 'data\postnr.csv'				DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.status				FROM 'data\status.csv'				DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.tilstand			FROM 'data\tilstand.csv'			DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.ukrudtsbek			FROM 'data\ukrudtsbek.csv'			DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.vejnavn				FROM 'data\vejnavn.csv'				DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.distrikt_type(pg_distrikt_type, aktiv)																FROM 'data\distrikt_type.csv'		DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.elementer(element_kode, elementnavn, objekt_type, tbl, enhedspris, aktiv)					FROM 'data\elementer.csv'			DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.kommunal_kontakt(navn, telefon, email, aktiv)														FROM 'data\kommunal_kontakt.csv'	DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.udfoerer(udfoerer, aktiv)																			FROM 'data\udfoerer.csv'			DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.udfoerer_entrep(udfoerer_entrep, aktiv)																FROM 'data\udfoerer_entrep.csv'		DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.udfoerer_kontakt(udfoerer_kode, navn, telefon, email, aktiv)										FROM 'data\udfoerer_kontakt.csv'	DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy basis.omraader(geometri,afdeling_nr,pg_distrikt_nr,pg_distrikt_tekst,pg_distrikt_type_kode,vejkode,vejnr,postnr,kommunal_kontakt_kode,udfoerer_kode,udfoerer_kontakt_kode1,udfoerer_kontakt_kode2,note,link,aktiv,synlig) FROM 'data\01_omraader.csv'	DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\ir 'disable.sql'
+\copy greg.flader(element_kode,geometri,cvr_kode,oprindkode,statuskode,off_kode,pg_distrikt_nr,vejkode,anlaegsaar,etabl_pleje_udloeb,udskiftningsaar,udtyndaar,kommunal_kontakt_kode,udfoerer_entrep_kode,driftniv_kode,ukrudtsbek_kode,konto_nr,tilstand_kode,klip_sider_kode,hoejde,slaegt,art,sort,note,link) FROM 'data\02_flader.csv'	DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy greg.linier(element_kode,geometri,cvr_kode,oprindkode,statuskode,off_kode,pg_distrikt_nr,vejkode,anlaegsaar,etabl_pleje_udloeb,udskiftningsaar,kommunal_kontakt_kode,udfoerer_entrep_kode,driftniv_kode,ukrudtsbek_kode,konto_nr,tilstand_kode,klip_sider_kode,bredde,hoejde,slaegt,art,sort,note,link) FROM 'data\02_linier.csv'	DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy greg.punkter(element_kode,geometri,cvr_kode,oprindkode,statuskode,off_kode,pg_distrikt_nr,vejkode,anlaegsaar,etabl_pleje_udloeb,udskiftningsaar,kommunal_kontakt_kode,udfoerer_entrep_kode,driftniv_kode,ukrudtsbek_kode,konto_nr,tilstand_kode,laengde,bredde,diameter,hoejde,slaegt,art,sort,note,link) FROM 'data\02_punkter.csv'	DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\copy styles.inputs(stylename,schema_name,table_name,column_name,ref_schema_name,ref_table_name,styling_schema_name,styling_table_name,styling_column_name,styling_label_exp,styling_filter_clause,styling_order_by,text_column,custom_style,active,op_styles,atlas_wrap_rule) FROM 'data\inputs.csv'	DELIMITER ';' ENCODING 'latin1' CSV HEADER
+\ir 'enable.sql'
+\ir 'maengder.sql'

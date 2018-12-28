@@ -1,0 +1,1571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<style>
+      .table {
+        background-color:#F5F5FF;
+        border-left:4px solid gray;
+        border-bottom:4px solid gray;
+        border-top:4px solid gray;
+        border-right:4px solid gray;
+        margin-bottom:3em;
+        margin-left:2em;
+        margin-right:2em;
+        padding:1em;
+      }
+      .tableNameHeading h1 {
+          display: inline;
+        font-family: Segoe UI, Arial, sans-serif;
+        font-size:125%;
+        font-weight:bold;
+      }
+        
+      .tableNameHeading h2 {
+        display: inline;
+        font-family: Segoe UI, Arial, sans-serif;
+        font-size:115%;
+        font-weight:normal;
+      }
+      
+      .tableComment { 
+        background-color:#e4efff; margin-bottom:20px;
+      }
+      
+      .tableDefinition { 
+        padding:2px;
+        border-collapse:collapse;
+        margin-top:1em;
+      }
+
+      .tdTableDefinition {
+        padding-right:10px;
+        vertical-align:top;
+        border-top:1px solid #C0C0C0;
+      }
+
+      .tdLogicalColName {
+        width:20em;
+      }
+      
+      .tdPhysicalColName {
+        width:20em;
+      }
+      
+      .tdDataType {
+        width:10em;
+      }
+
+      .tdPkFlag {
+        width:4em;
+      }
+
+      .tdNullFlag {
+        width:9em;
+      }
+
+      .tdTableHeading {
+        padding:2px;
+        font-family: Segoe UI, Arial, sans-serif;
+        font-weight: bold;
+        vertical-align:top;
+        border-bottom: 1px solid #C0C0C0;
+        background-color: rgb(240,240,240);
+      }
+      
+      .subTitle {
+        font-family: Segoe UI, Arial, sans-serif;
+        font-weight: bold;
+      }
+
+      .references {
+      }
+      .comment {
+        color:#666666;
+        margin-left:3em;
+        padding:0.25em;
+      }
+    </style>
+<title>Grøn Registrering</title>
+</head>
+<body>
+<center>
+<h2>Grøn Registrering</h2>
+</center>
+<h3>List of tables</h3>
+<ul>
+<li>
+<a href="#afdelinger">afdelinger</a>
+</li>
+<li>
+<a href="#ansvarlig_myndighed">ansvarlig_myndighed</a>
+</li>
+<li>
+<a href="#delomraader">delomraader</a>
+</li>
+<li>
+<a href="#distrikt_type">distrikt_type</a>
+</li>
+<li>
+<a href="#driftniv">driftniv</a>
+</li>
+<li>
+<a href="#elementer">elementer</a>
+</li>
+<li>
+<a href="#flader">flader</a>
+</li>
+<li>
+<a href="#klip_sider">klip_sider</a>
+</li>
+<li>
+<a href="#kommunal_kontakt">kommunal_kontakt</a>
+</li>
+<li>
+<a href="#linier">linier</a>
+</li>
+<li>
+<a href="#maengder">maengder</a>
+</li>
+<li>
+<a href="#objekt_typer">objekt_typer</a>
+</li>
+<li>
+<a href="#offentlig">offentlig</a>
+</li>
+<li>
+<a href="#omraader">omraader</a>
+</li>
+<li>
+<a href="#oprindelse">oprindelse</a>
+</li>
+<li>
+<a href="#postnr">postnr</a>
+</li>
+<li>
+<a href="#prisregulering">prisregulering</a>
+</li>
+<li>
+<a href="#punkter">punkter</a>
+</li>
+<li>
+<a href="#status">status</a>
+</li>
+<li>
+<a href="#tilstand">tilstand</a>
+</li>
+<li>
+<a href="#udfoerer">udfoerer</a>
+</li>
+<li>
+<a href="#udfoerer_entrep">udfoerer_entrep</a>
+</li>
+<li>
+<a href="#udfoerer_kontakt">udfoerer_kontakt</a>
+</li>
+<li>
+<a href="#ukrudtsbek">ukrudtsbek</a>
+</li>
+<li>
+<a href="#vejnavn">vejnavn</a>
+</li>
+</ul>
+<div class="tableNameHeading">
+<h1>afdelinger<a name="afdelinger"></a>
+</h1>
+<h2>
+      (Physical Name: afdelinger)
+      </h2>
+<p class="comment">H&oslash;jere geografisk inddeling, afdelinger.</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">afdeling_nr (PK)</td><td class="tdTableDefinition">afdeling_nr</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">geometri</td><td class="tdTableDefinition">geometri</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">afdeling_tekst</td><td class="tdTableDefinition">afdeling_tekst</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references"></div>
+</div>
+<div class="tableNameHeading">
+<h1>ansvarlig_myndighed<a name="ansvarlig_myndighed"></a>
+</h1>
+<h2>
+      (Physical Name: ansvarlig_myndighed)
+      </h2>
+<p class="comment">Opslagstabel, ansvarlig myndighed for elementet (FKG).</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">cvr_kode (PK)</td><td class="tdTableDefinition">cvr_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">cvr_navn</td><td class="tdTableDefinition">cvr_navn</td><td class="tdTableDefinition">VARCHAR(128)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">kommunekode</td><td class="tdTableDefinition">kommunekode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#flader">flader</a> referencing (cvr_kode)</li>
+<li>
+<a href="#linier">linier</a> referencing (cvr_kode)</li>
+<li>
+<a href="#punkter">punkter</a> referencing (cvr_kode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>delomraader<a name="delomraader"></a>
+</h1>
+<h2>
+      (Physical Name: delomraader)
+      </h2>
+<p class="comment">Fokusomr&aring;der i atlas.</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">id (PK)</td><td class="tdTableDefinition">id</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">geometri</td><td class="tdTableDefinition">geometri</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">pg_distrikt_nr</td><td class="tdTableDefinition">pg_distrikt_nr</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">beskrivelse</td><td class="tdTableDefinition">beskrivelse</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references"></div>
+</div>
+<div class="tableNameHeading">
+<h1>distrikt_type<a name="distrikt_type"></a>
+</h1>
+<h2>
+      (Physical Name: distrikt_type)
+      </h2>
+<p class="comment">Opslagstabel, omr&aring;detyper. Fx gr&oslash;nne omr&aring;der, skoler mv. (FKG).</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">pg_distrikt_type_kode (PK)</td><td class="tdTableDefinition">pg_distrikt_type_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">pg_distrikt_type</td><td class="tdTableDefinition">pg_distrikt_type</td><td class="tdTableDefinition">VARCHAR(30)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#omraader">omraader</a> referencing (pg_distrikt_type_kode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>driftniv<a name="driftniv"></a>
+</h1>
+<h2>
+      (Physical Name: driftniv)
+      </h2>
+<p class="comment">Opslagstabel, driftsniveau for elementet mht. renhold (FKG).</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">driftniv_kode (PK)</td><td class="tdTableDefinition">driftniv_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">driftniv</td><td class="tdTableDefinition">driftniv</td><td class="tdTableDefinition">VARCHAR(10)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">begrebsdefinition</td><td class="tdTableDefinition">begrebsdefinition</td><td class="tdTableDefinition">VARCHAR(2147483647)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">enhedspris_f</td><td class="tdTableDefinition">enhedspris_f</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">enhedspris_l</td><td class="tdTableDefinition">enhedspris_l</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">enhedspris_p</td><td class="tdTableDefinition">enhedspris_p</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#flader">flader</a> referencing (driftniv_kode)</li>
+<li>
+<a href="#linier">linier</a> referencing (driftniv_kode)</li>
+<li>
+<a href="#punkter">punkter</a> referencing (driftniv_kode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>elementer<a name="elementer"></a>
+</h1>
+<h2>
+      (Physical Name: elementer)
+      </h2>
+<p class="comment">Opslagstabel, elementtyper, som beskriver driften.</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">element_kode (PK)</td><td class="tdTableDefinition">element_kode</td><td class="tdTableDefinition">[2003]</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">elementnavn</td><td class="tdTableDefinition">elementnavn</td><td class="tdTableDefinition">VARCHAR(50)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">objekt_type</td><td class="tdTableDefinition">objekt_type</td><td class="tdTableDefinition">[2003]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">tbl</td><td class="tdTableDefinition">tbl</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">enhedspris</td><td class="tdTableDefinition">enhedspris</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#flader">flader</a> referencing (element_kode)</li>
+<li>
+<a href="#linier">linier</a> referencing (element_kode)</li>
+<li>
+<a href="#punkter">punkter</a> referencing (element_kode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>flader<a name="flader"></a>
+</h1>
+<h2>
+      (Physical Name: flader)
+      </h2>
+<p class="comment">R&aring;datatabel for elementer defineret som flader. Indeholder b&aring;de aktuel og historisk data.</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">versions_id (PK)</td><td class="tdTableDefinition">versions_id</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">objekt_id</td><td class="tdTableDefinition">objekt_id</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">oprettet</td><td class="tdTableDefinition">oprettet</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">systid_fra</td><td class="tdTableDefinition">systid_fra</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">systid_til</td><td class="tdTableDefinition">systid_til</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">bruger_id_start</td><td class="tdTableDefinition">bruger_id_start</td><td class="tdTableDefinition">VARCHAR(128)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">bruger_id_slut</td><td class="tdTableDefinition">bruger_id_slut</td><td class="tdTableDefinition">VARCHAR(128)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">geometri</td><td class="tdTableDefinition">geometri</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">cvr_kode
+                &nbsp;(<a href="#ansvarlig_myndighed">FK</a>)
+              </td><td class="tdTableDefinition">cvr_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">oprindkode
+                &nbsp;(<a href="#oprindelse">FK</a>)
+              </td><td class="tdTableDefinition">oprindkode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">statuskode
+                &nbsp;(<a href="#status">FK</a>)
+              </td><td class="tdTableDefinition">statuskode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">off_kode
+                &nbsp;(<a href="#offentlig">FK</a>)
+              </td><td class="tdTableDefinition">off_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">element_kode
+                &nbsp;(<a href="#elementer">FK</a>)
+              </td><td class="tdTableDefinition">element_kode</td><td class="tdTableDefinition">[2003]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">pg_distrikt_nr</td><td class="tdTableDefinition">pg_distrikt_nr</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">vejkode
+                &nbsp;(<a href="#vejnavn">FK</a>)
+              </td><td class="tdTableDefinition">vejkode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">vejnr</td><td class="tdTableDefinition">vejnr</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">anlaegsaar</td><td class="tdTableDefinition">anlaegsaar</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">etabl_pleje_udloeb</td><td class="tdTableDefinition">etabl_pleje_udloeb</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udskiftningsaar</td><td class="tdTableDefinition">udskiftningsaar</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udtyndaar</td><td class="tdTableDefinition">udtyndaar</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">kommunal_kontakt_kode
+                &nbsp;(<a href="#kommunal_kontakt">FK</a>)
+              </td><td class="tdTableDefinition">kommunal_kontakt_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udfoerer_entrep_kode
+                &nbsp;(<a href="#udfoerer_entrep">FK</a>)
+              </td><td class="tdTableDefinition">udfoerer_entrep_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">driftniv_kode
+                &nbsp;(<a href="#driftniv">FK</a>)
+              </td><td class="tdTableDefinition">driftniv_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">ukrudtsbek_kode
+                &nbsp;(<a href="#ukrudtsbek">FK</a>)
+              </td><td class="tdTableDefinition">ukrudtsbek_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">konto_nr</td><td class="tdTableDefinition">konto_nr</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">tilstand_kode
+                &nbsp;(<a href="#tilstand">FK</a>)
+              </td><td class="tdTableDefinition">tilstand_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">klip_sider_kode
+                &nbsp;(<a href="#klip_sider">FK</a>)
+              </td><td class="tdTableDefinition">klip_sider_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">hoejde</td><td class="tdTableDefinition">hoejde</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">slaegt</td><td class="tdTableDefinition">slaegt</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">art</td><td class="tdTableDefinition">art</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">sort</td><td class="tdTableDefinition">sort</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">note</td><td class="tdTableDefinition">note</td><td class="tdTableDefinition">VARCHAR(254)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">link</td><td class="tdTableDefinition">link</td><td class="tdTableDefinition">VARCHAR(1024)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">litra</td><td class="tdTableDefinition">litra</td><td class="tdTableDefinition">VARCHAR(128)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">References</p>
+<ul>
+<li>
+<a href="#ansvarlig_myndighed">ansvarlig_myndighed</a> through (cvr_kode)</li>
+<li>
+<a href="#driftniv">driftniv</a> through (driftniv_kode)</li>
+<li>
+<a href="#elementer">elementer</a> through (element_kode)</li>
+<li>
+<a href="#klip_sider">klip_sider</a> through (klip_sider_kode)</li>
+<li>
+<a href="#kommunal_kontakt">kommunal_kontakt</a> through (kommunal_kontakt_kode)</li>
+<li>
+<a href="#offentlig">offentlig</a> through (off_kode)</li>
+<li>
+<a href="#oprindelse">oprindelse</a> through (oprindkode)</li>
+<li>
+<a href="#status">status</a> through (statuskode)</li>
+<li>
+<a href="#tilstand">tilstand</a> through (tilstand_kode)</li>
+<li>
+<a href="#udfoerer_entrep">udfoerer_entrep</a> through (udfoerer_entrep_kode)</li>
+<li>
+<a href="#ukrudtsbek">ukrudtsbek</a> through (ukrudtsbek_kode)</li>
+<li>
+<a href="#vejnavn">vejnavn</a> through (vejkode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>klip_sider<a name="klip_sider"></a>
+</h1>
+<h2>
+      (Physical Name: klip_sider)
+      </h2>
+<p class="comment">Antal klippesider.</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">klip_sider_kode (PK)</td><td class="tdTableDefinition">klip_sider_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">klip_sider</td><td class="tdTableDefinition">klip_sider</td><td class="tdTableDefinition">VARCHAR(40)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#flader">flader</a> referencing (klip_sider_kode)</li>
+<li>
+<a href="#linier">linier</a> referencing (klip_sider_kode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>kommunal_kontakt<a name="kommunal_kontakt"></a>
+</h1>
+<h2>
+      (Physical Name: kommunal_kontakt)
+      </h2>
+<p class="comment">Opslagstabel, kommunal kontakt for element / omr&aring;de (FKG).</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">kommunal_kontakt_kode (PK)</td><td class="tdTableDefinition">kommunal_kontakt_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">navn</td><td class="tdTableDefinition">navn</td><td class="tdTableDefinition">VARCHAR(100)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">telefon</td><td class="tdTableDefinition">telefon</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">email</td><td class="tdTableDefinition">email</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#omraader">omraader</a> referencing (kommunal_kontakt_kode)</li>
+<li>
+<a href="#flader">flader</a> referencing (kommunal_kontakt_kode)</li>
+<li>
+<a href="#linier">linier</a> referencing (kommunal_kontakt_kode)</li>
+<li>
+<a href="#punkter">punkter</a> referencing (kommunal_kontakt_kode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>linier<a name="linier"></a>
+</h1>
+<h2>
+      (Physical Name: linier)
+      </h2>
+<p class="comment">R&aring;datatabel for elementer defineret som linier. Indeholder b&aring;de aktuel og historisk data.</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">versions_id (PK)</td><td class="tdTableDefinition">versions_id</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">objekt_id</td><td class="tdTableDefinition">objekt_id</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">oprettet</td><td class="tdTableDefinition">oprettet</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">systid_fra</td><td class="tdTableDefinition">systid_fra</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">systid_til</td><td class="tdTableDefinition">systid_til</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">bruger_id_start</td><td class="tdTableDefinition">bruger_id_start</td><td class="tdTableDefinition">VARCHAR(128)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">bruger_id_slut</td><td class="tdTableDefinition">bruger_id_slut</td><td class="tdTableDefinition">VARCHAR(128)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">geometri</td><td class="tdTableDefinition">geometri</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">cvr_kode
+                &nbsp;(<a href="#ansvarlig_myndighed">FK</a>)
+              </td><td class="tdTableDefinition">cvr_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">oprindkode
+                &nbsp;(<a href="#oprindelse">FK</a>)
+              </td><td class="tdTableDefinition">oprindkode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">statuskode
+                &nbsp;(<a href="#status">FK</a>)
+              </td><td class="tdTableDefinition">statuskode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">off_kode
+                &nbsp;(<a href="#offentlig">FK</a>)
+              </td><td class="tdTableDefinition">off_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">element_kode
+                &nbsp;(<a href="#elementer">FK</a>)
+              </td><td class="tdTableDefinition">element_kode</td><td class="tdTableDefinition">[2003]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">pg_distrikt_nr</td><td class="tdTableDefinition">pg_distrikt_nr</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">vejkode
+                &nbsp;(<a href="#vejnavn">FK</a>)
+              </td><td class="tdTableDefinition">vejkode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">vejnr</td><td class="tdTableDefinition">vejnr</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">anlaegsaar</td><td class="tdTableDefinition">anlaegsaar</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">etabl_pleje_udloeb</td><td class="tdTableDefinition">etabl_pleje_udloeb</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udskiftningsaar</td><td class="tdTableDefinition">udskiftningsaar</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">kommunal_kontakt_kode
+                &nbsp;(<a href="#kommunal_kontakt">FK</a>)
+              </td><td class="tdTableDefinition">kommunal_kontakt_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udfoerer_entrep_kode
+                &nbsp;(<a href="#udfoerer_entrep">FK</a>)
+              </td><td class="tdTableDefinition">udfoerer_entrep_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">driftniv_kode
+                &nbsp;(<a href="#driftniv">FK</a>)
+              </td><td class="tdTableDefinition">driftniv_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">ukrudtsbek_kode
+                &nbsp;(<a href="#ukrudtsbek">FK</a>)
+              </td><td class="tdTableDefinition">ukrudtsbek_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">konto_nr</td><td class="tdTableDefinition">konto_nr</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">tilstand_kode
+                &nbsp;(<a href="#tilstand">FK</a>)
+              </td><td class="tdTableDefinition">tilstand_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">klip_sider_kode
+                &nbsp;(<a href="#klip_sider">FK</a>)
+              </td><td class="tdTableDefinition">klip_sider_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">bredde</td><td class="tdTableDefinition">bredde</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">hoejde</td><td class="tdTableDefinition">hoejde</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">slaegt</td><td class="tdTableDefinition">slaegt</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">art</td><td class="tdTableDefinition">art</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">sort</td><td class="tdTableDefinition">sort</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">note</td><td class="tdTableDefinition">note</td><td class="tdTableDefinition">VARCHAR(254)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">link</td><td class="tdTableDefinition">link</td><td class="tdTableDefinition">VARCHAR(1024)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">litra</td><td class="tdTableDefinition">litra</td><td class="tdTableDefinition">VARCHAR(128)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">References</p>
+<ul>
+<li>
+<a href="#ansvarlig_myndighed">ansvarlig_myndighed</a> through (cvr_kode)</li>
+<li>
+<a href="#driftniv">driftniv</a> through (driftniv_kode)</li>
+<li>
+<a href="#elementer">elementer</a> through (element_kode)</li>
+<li>
+<a href="#klip_sider">klip_sider</a> through (klip_sider_kode)</li>
+<li>
+<a href="#kommunal_kontakt">kommunal_kontakt</a> through (kommunal_kontakt_kode)</li>
+<li>
+<a href="#offentlig">offentlig</a> through (off_kode)</li>
+<li>
+<a href="#oprindelse">oprindelse</a> through (oprindkode)</li>
+<li>
+<a href="#status">status</a> through (statuskode)</li>
+<li>
+<a href="#tilstand">tilstand</a> through (tilstand_kode)</li>
+<li>
+<a href="#udfoerer_entrep">udfoerer_entrep</a> through (udfoerer_entrep_kode)</li>
+<li>
+<a href="#ukrudtsbek">ukrudtsbek</a> through (ukrudtsbek_kode)</li>
+<li>
+<a href="#vejnavn">vejnavn</a> through (vejkode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>maengder<a name="maengder"></a>
+</h1>
+<h2>
+      (Physical Name: maengder)
+      </h2>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">id (PK)</td><td class="tdTableDefinition">id</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">element_kode</td><td class="tdTableDefinition">element_kode</td><td class="tdTableDefinition">[2003]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">beskrivelse</td><td class="tdTableDefinition">beskrivelse</td><td class="tdTableDefinition">LONGVARCHAR</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">alt_enhed</td><td class="tdTableDefinition">alt_enhed</td><td class="tdTableDefinition">LONGVARCHAR</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">objekt_type</td><td class="tdTableDefinition">objekt_type</td><td class="tdTableDefinition">[2003]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">enhedspris</td><td class="tdTableDefinition">enhedspris</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">maengde_sql</td><td class="tdTableDefinition">maengde_sql</td><td class="tdTableDefinition">LONGVARCHAR</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">source_schema</td><td class="tdTableDefinition">source_schema</td><td class="tdTableDefinition">LONGVARCHAR</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">source_table</td><td class="tdTableDefinition">source_table</td><td class="tdTableDefinition">LONGVARCHAR</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">source_column</td><td class="tdTableDefinition">source_column</td><td class="tdTableDefinition">LONGVARCHAR</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">source_label</td><td class="tdTableDefinition">source_label</td><td class="tdTableDefinition">LONGVARCHAR</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">source_column_pris</td><td class="tdTableDefinition">source_column_pris</td><td class="tdTableDefinition">LONGVARCHAR</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">source_where_clause</td><td class="tdTableDefinition">source_where_clause</td><td class="tdTableDefinition">LONGVARCHAR</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">target_column</td><td class="tdTableDefinition">target_column</td><td class="tdTableDefinition">LONGVARCHAR</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+</table>
+<div class="references"></div>
+</div>
+<div class="tableNameHeading">
+<h1>objekt_typer<a name="objekt_typer"></a>
+</h1>
+<h2>
+      (Physical Name: objekt_typer)
+      </h2>
+<p class="comment">Opslagstabel til QGIS vedr. objekttyper for elementer.</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">dimension (PK)</td><td class="tdTableDefinition">dimension</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">beskrivelse</td><td class="tdTableDefinition">beskrivelse</td><td class="tdTableDefinition">VARCHAR(10)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">mgd_besk</td><td class="tdTableDefinition">mgd_besk</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">enhed</td><td class="tdTableDefinition">enhed</td><td class="tdTableDefinition">VARCHAR(10)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">mgd_sql</td><td class="tdTableDefinition">mgd_sql</td><td class="tdTableDefinition">LONGVARCHAR</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">_decimal</td><td class="tdTableDefinition">_decimal</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references"></div>
+</div>
+<div class="tableNameHeading">
+<h1>offentlig<a name="offentlig"></a>
+</h1>
+<h2>
+      (Physical Name: offentlig)
+      </h2>
+<p class="comment">Opslagstabel, offentlighedsstatus (FKG).</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">off_kode (PK)</td><td class="tdTableDefinition">off_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">offentlig</td><td class="tdTableDefinition">offentlig</td><td class="tdTableDefinition">VARCHAR(60)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#flader">flader</a> referencing (off_kode)</li>
+<li>
+<a href="#linier">linier</a> referencing (off_kode)</li>
+<li>
+<a href="#punkter">punkter</a> referencing (off_kode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>omraader<a name="omraader"></a>
+</h1>
+<h2>
+      (Physical Name: omraader)
+      </h2>
+<p class="comment">Specifik geografisk inddeling, omr&aring;der.</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">pg_distrikt_nr</td><td class="tdTableDefinition">pg_distrikt_nr</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">geometri</td><td class="tdTableDefinition">geometri</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">pg_distrikt_tekst</td><td class="tdTableDefinition">pg_distrikt_tekst</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">afdeling_nr</td><td class="tdTableDefinition">afdeling_nr</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">pg_distrikt_type_kode
+                &nbsp;(<a href="#distrikt_type">FK</a>)
+              </td><td class="tdTableDefinition">pg_distrikt_type_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">vejkode
+                &nbsp;(<a href="#vejnavn">FK</a>)
+              </td><td class="tdTableDefinition">vejkode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">vejnr</td><td class="tdTableDefinition">vejnr</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">postnr
+                &nbsp;(<a href="#postnr">FK</a>)
+              </td><td class="tdTableDefinition">postnr</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">kommunal_kontakt_kode
+                &nbsp;(<a href="#kommunal_kontakt">FK</a>)
+              </td><td class="tdTableDefinition">kommunal_kontakt_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udfoerer_kode
+                &nbsp;(<a href="#udfoerer">FK</a>)
+              </td><td class="tdTableDefinition">udfoerer_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udfoerer_kontakt_kode1
+                &nbsp;(<a href="#udfoerer_kontakt">FK</a>)
+              </td><td class="tdTableDefinition">udfoerer_kontakt_kode1</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udfoerer_kontakt_kode2
+                &nbsp;(<a href="#udfoerer_kontakt">FK</a>)
+              </td><td class="tdTableDefinition">udfoerer_kontakt_kode2</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">note</td><td class="tdTableDefinition">note</td><td class="tdTableDefinition">VARCHAR(254)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">link</td><td class="tdTableDefinition">link</td><td class="tdTableDefinition">VARCHAR(1024)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">synlig</td><td class="tdTableDefinition">synlig</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">References</p>
+<ul>
+<li>
+<a href="#distrikt_type">distrikt_type</a> through (pg_distrikt_type_kode)</li>
+<li>
+<a href="#kommunal_kontakt">kommunal_kontakt</a> through (kommunal_kontakt_kode)</li>
+<li>
+<a href="#postnr">postnr</a> through (postnr)</li>
+<li>
+<a href="#udfoerer">udfoerer</a> through (udfoerer_kode)</li>
+<li>
+<a href="#udfoerer_kontakt">udfoerer_kontakt</a> through (udfoerer_kontakt_kode1)</li>
+<li>
+<a href="#udfoerer_kontakt">udfoerer_kontakt</a> through (udfoerer_kontakt_kode2)</li>
+<li>
+<a href="#vejnavn">vejnavn</a> through (vejkode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>oprindelse<a name="oprindelse"></a>
+</h1>
+<h2>
+      (Physical Name: oprindelse)
+      </h2>
+<p class="comment">Opslagstabel, oprindelse (FKG).</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">oprindkode (PK)</td><td class="tdTableDefinition">oprindkode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">oprindelse</td><td class="tdTableDefinition">oprindelse</td><td class="tdTableDefinition">VARCHAR(35)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">begrebsdefinition</td><td class="tdTableDefinition">begrebsdefinition</td><td class="tdTableDefinition">VARCHAR(2147483647)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#flader">flader</a> referencing (oprindkode)</li>
+<li>
+<a href="#linier">linier</a> referencing (oprindkode)</li>
+<li>
+<a href="#punkter">punkter</a> referencing (oprindkode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>postnr<a name="postnr"></a>
+</h1>
+<h2>
+      (Physical Name: postnr)
+      </h2>
+<p class="comment">Opslagstabel, postdistrikter (FKG).</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">postnr (PK)</td><td class="tdTableDefinition">postnr</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">postnr_by</td><td class="tdTableDefinition">postnr_by</td><td class="tdTableDefinition">VARCHAR(128)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#omraader">omraader</a> referencing (postnr)</li>
+<li>
+<a href="#vejnavn">vejnavn</a> referencing (postnr)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>prisregulering<a name="prisregulering"></a>
+</h1>
+<h2>
+      (Physical Name: prisregulering)
+      </h2>
+<p class="comment">L&oslash;bende regulering af grundpriser.</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">dato (PK)</td><td class="tdTableDefinition">dato</td><td class="tdTableDefinition">DATE</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aendring_pct</td><td class="tdTableDefinition">aendring_pct</td><td class="tdTableDefinition">NUMERIC(10,2)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+</table>
+<div class="references"></div>
+</div>
+<div class="tableNameHeading">
+<h1>punkter<a name="punkter"></a>
+</h1>
+<h2>
+      (Physical Name: punkter)
+      </h2>
+<p class="comment">R&aring;datatabel for elementer defineret som punkter. Indeholder b&aring;de aktuel og historisk data.</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">versions_id (PK)</td><td class="tdTableDefinition">versions_id</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">objekt_id</td><td class="tdTableDefinition">objekt_id</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">oprettet</td><td class="tdTableDefinition">oprettet</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">systid_fra</td><td class="tdTableDefinition">systid_fra</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">systid_til</td><td class="tdTableDefinition">systid_til</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">bruger_id_start</td><td class="tdTableDefinition">bruger_id_start</td><td class="tdTableDefinition">VARCHAR(128)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">bruger_id_slut</td><td class="tdTableDefinition">bruger_id_slut</td><td class="tdTableDefinition">VARCHAR(128)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">geometri</td><td class="tdTableDefinition">geometri</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">cvr_kode
+                &nbsp;(<a href="#ansvarlig_myndighed">FK</a>)
+              </td><td class="tdTableDefinition">cvr_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">oprindkode
+                &nbsp;(<a href="#oprindelse">FK</a>)
+              </td><td class="tdTableDefinition">oprindkode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">statuskode
+                &nbsp;(<a href="#status">FK</a>)
+              </td><td class="tdTableDefinition">statuskode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">off_kode
+                &nbsp;(<a href="#offentlig">FK</a>)
+              </td><td class="tdTableDefinition">off_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">element_kode
+                &nbsp;(<a href="#elementer">FK</a>)
+              </td><td class="tdTableDefinition">element_kode</td><td class="tdTableDefinition">[2003]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">pg_distrikt_nr</td><td class="tdTableDefinition">pg_distrikt_nr</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">vejkode
+                &nbsp;(<a href="#vejnavn">FK</a>)
+              </td><td class="tdTableDefinition">vejkode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">vejnr</td><td class="tdTableDefinition">vejnr</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">anlaegsaar</td><td class="tdTableDefinition">anlaegsaar</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">etabl_pleje_udloeb</td><td class="tdTableDefinition">etabl_pleje_udloeb</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udskiftningsaar</td><td class="tdTableDefinition">udskiftningsaar</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">kommunal_kontakt_kode
+                &nbsp;(<a href="#kommunal_kontakt">FK</a>)
+              </td><td class="tdTableDefinition">kommunal_kontakt_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udfoerer_entrep_kode
+                &nbsp;(<a href="#udfoerer_entrep">FK</a>)
+              </td><td class="tdTableDefinition">udfoerer_entrep_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">driftniv_kode
+                &nbsp;(<a href="#driftniv">FK</a>)
+              </td><td class="tdTableDefinition">driftniv_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">ukrudtsbek_kode
+                &nbsp;(<a href="#ukrudtsbek">FK</a>)
+              </td><td class="tdTableDefinition">ukrudtsbek_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">konto_nr</td><td class="tdTableDefinition">konto_nr</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">tilstand_kode
+                &nbsp;(<a href="#tilstand">FK</a>)
+              </td><td class="tdTableDefinition">tilstand_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">laengde</td><td class="tdTableDefinition">laengde</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">bredde</td><td class="tdTableDefinition">bredde</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">diameter</td><td class="tdTableDefinition">diameter</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">hoejde</td><td class="tdTableDefinition">hoejde</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">slaegt</td><td class="tdTableDefinition">slaegt</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">art</td><td class="tdTableDefinition">art</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">sort</td><td class="tdTableDefinition">sort</td><td class="tdTableDefinition">VARCHAR(150)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">note</td><td class="tdTableDefinition">note</td><td class="tdTableDefinition">VARCHAR(254)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">link</td><td class="tdTableDefinition">link</td><td class="tdTableDefinition">VARCHAR(1024)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">litra</td><td class="tdTableDefinition">litra</td><td class="tdTableDefinition">VARCHAR(128)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">References</p>
+<ul>
+<li>
+<a href="#ansvarlig_myndighed">ansvarlig_myndighed</a> through (cvr_kode)</li>
+<li>
+<a href="#driftniv">driftniv</a> through (driftniv_kode)</li>
+<li>
+<a href="#elementer">elementer</a> through (element_kode)</li>
+<li>
+<a href="#kommunal_kontakt">kommunal_kontakt</a> through (kommunal_kontakt_kode)</li>
+<li>
+<a href="#offentlig">offentlig</a> through (off_kode)</li>
+<li>
+<a href="#oprindelse">oprindelse</a> through (oprindkode)</li>
+<li>
+<a href="#status">status</a> through (statuskode)</li>
+<li>
+<a href="#tilstand">tilstand</a> through (tilstand_kode)</li>
+<li>
+<a href="#udfoerer_entrep">udfoerer_entrep</a> through (udfoerer_entrep_kode)</li>
+<li>
+<a href="#ukrudtsbek">ukrudtsbek</a> through (ukrudtsbek_kode)</li>
+<li>
+<a href="#vejnavn">vejnavn</a> through (vejkode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>status<a name="status"></a>
+</h1>
+<h2>
+      (Physical Name: status)
+      </h2>
+<p class="comment">Opslagstabel, gyldighedsstatus (FKG).</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">statuskode (PK)</td><td class="tdTableDefinition">statuskode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">status</td><td class="tdTableDefinition">status</td><td class="tdTableDefinition">VARCHAR(30)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#flader">flader</a> referencing (statuskode)</li>
+<li>
+<a href="#linier">linier</a> referencing (statuskode)</li>
+<li>
+<a href="#punkter">punkter</a> referencing (statuskode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>tilstand<a name="tilstand"></a>
+</h1>
+<h2>
+      (Physical Name: tilstand)
+      </h2>
+<p class="comment">Opslagstabel, tilstand (FKG).</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">tilstand_kode (PK)</td><td class="tdTableDefinition">tilstand_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">tilstand</td><td class="tdTableDefinition">tilstand</td><td class="tdTableDefinition">VARCHAR(25)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">begrebsdefinition</td><td class="tdTableDefinition">begrebsdefinition</td><td class="tdTableDefinition">VARCHAR(2147483647)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#flader">flader</a> referencing (tilstand_kode)</li>
+<li>
+<a href="#linier">linier</a> referencing (tilstand_kode)</li>
+<li>
+<a href="#punkter">punkter</a> referencing (tilstand_kode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>udfoerer<a name="udfoerer"></a>
+</h1>
+<h2>
+      (Physical Name: udfoerer)
+      </h2>
+<p class="comment">Opslagstabel, ansvarlig udf&oslash;rende for entrepriseomr&aring;de (FKG).</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udfoerer_kode (PK)</td><td class="tdTableDefinition">udfoerer_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udfoerer</td><td class="tdTableDefinition">udfoerer</td><td class="tdTableDefinition">VARCHAR(50)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#omraader">omraader</a> referencing (udfoerer_kode)</li>
+<li>
+<a href="#udfoerer_kontakt">udfoerer_kontakt</a> referencing (udfoerer_kode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>udfoerer_entrep<a name="udfoerer_entrep"></a>
+</h1>
+<h2>
+      (Physical Name: udfoerer_entrep)
+      </h2>
+<p class="comment">Opslagstabel, ansvarlig udf&oslash;rerende entrepren&oslash;r for element (FKG).</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udfoerer_entrep_kode (PK)</td><td class="tdTableDefinition">udfoerer_entrep_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udfoerer_entrep</td><td class="tdTableDefinition">udfoerer_entrep</td><td class="tdTableDefinition">VARCHAR(50)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#flader">flader</a> referencing (udfoerer_entrep_kode)</li>
+<li>
+<a href="#linier">linier</a> referencing (udfoerer_entrep_kode)</li>
+<li>
+<a href="#punkter">punkter</a> referencing (udfoerer_entrep_kode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>udfoerer_kontakt<a name="udfoerer_kontakt"></a>
+</h1>
+<h2>
+      (Physical Name: udfoerer_kontakt)
+      </h2>
+<p class="comment">Opslagstabel, kontaktinformationer p&aring; ansvarlig udf&oslash;rende.</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udfoerer_kontakt_kode</td><td class="tdTableDefinition">udfoerer_kontakt_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">udfoerer_kode
+                &nbsp;(<a href="#udfoerer">FK</a>)
+              </td><td class="tdTableDefinition">udfoerer_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">navn</td><td class="tdTableDefinition">navn</td><td class="tdTableDefinition">VARCHAR(100)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">telefon</td><td class="tdTableDefinition">telefon</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">email</td><td class="tdTableDefinition">email</td><td class="tdTableDefinition">[1111]</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">References</p>
+<ul>
+<li>
+<a href="#udfoerer">udfoerer</a> through (udfoerer_kode)</li>
+</ul>
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#omraader">omraader</a> referencing (udfoerer_kontakt_kode)</li>
+<li>
+<a href="#omraader">omraader</a> referencing (udfoerer_kontakt_kode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>ukrudtsbek<a name="ukrudtsbek"></a>
+</h1>
+<h2>
+      (Physical Name: ukrudtsbek)
+      </h2>
+<p class="comment">Opslagstabel, ukrudtsbek&aelig;mpelsesmetode, tilladt/afvigelse fra norm (FKG).</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">ukrudtsbek_kode (PK)</td><td class="tdTableDefinition">ukrudtsbek_kode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">ukrudtsbek</td><td class="tdTableDefinition">ukrudtsbek</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">begrebsdefinition</td><td class="tdTableDefinition">begrebsdefinition</td><td class="tdTableDefinition">VARCHAR(2147483647)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#flader">flader</a> referencing (ukrudtsbek_kode)</li>
+<li>
+<a href="#linier">linier</a> referencing (ukrudtsbek_kode)</li>
+<li>
+<a href="#punkter">punkter</a> referencing (ukrudtsbek_kode)</li>
+</ul>
+</div>
+</div>
+<div class="tableNameHeading">
+<h1>vejnavn<a name="vejnavn"></a>
+</h1>
+<h2>
+      (Physical Name: vejnavn)
+      </h2>
+<p class="comment">Opslagstabel, vejnavne (FKG).</p>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">vejkode (PK)</td><td class="tdTableDefinition">vejkode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">vejnavn</td><td class="tdTableDefinition">vejnavn</td><td class="tdTableDefinition">VARCHAR(40)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">aktiv</td><td class="tdTableDefinition">BOOLEAN</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">cvf_vejkode</td><td class="tdTableDefinition">cvf_vejkode</td><td class="tdTableDefinition">VARCHAR(7)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">postnr
+                &nbsp;(<a href="#postnr">FK</a>)
+              </td><td class="tdTableDefinition">postnr</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">kommunekode</td><td class="tdTableDefinition">kommunekode</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">References</p>
+<ul>
+<li>
+<a href="#postnr">postnr</a> through (postnr)</li>
+</ul>
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#omraader">omraader</a> referencing (vejkode)</li>
+<li>
+<a href="#flader">flader</a> referencing (vejkode)</li>
+<li>
+<a href="#linier">linier</a> referencing (vejkode)</li>
+<li>
+<a href="#punkter">punkter</a> referencing (vejkode)</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

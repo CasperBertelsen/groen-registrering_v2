@@ -1,0 +1,4 @@
+dimension;beskrivelse;mgd_besk;enhed;mgd_sql;_decimal
+0;Punkt;Antal;stk.;ST_NumGeometries(geometri);0
+1;Linie;Længde;lbm.;ST_Length(geometri);1
+2;Polygon;Areal;m²;ST_Area(geometri);1

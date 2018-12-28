@@ -1,0 +1,9 @@
+oprindkode;oprindelse;aktiv;begrebsdefinition
+0;Ikke udfyldt;t;
+1;Ortofoto;t;Der skelnes ikke mellem forskellige producenter og forskellige årgange
+2;Matrikelkort;t;Matrikelkort fra KMS (København og Frederiksberg). Det forudsættes, at der benyttes opdaterede matrikelkort for datoen for planens indberetning
+3;Opmåling;t;Kan være med GPS, andet instrument el. lign. Det er ikke et udtryk for præcisi-on, men at det er udført i marken
+4;FOT / Tekniske kort;t;FOT, DTK, Danmarks Topografisk kortværk eller andre raster kort samt kommunernes tekniske kort eller andre vektorkort. Indtil FOT er landsdækkende benyttes kort10 (jf. overgangsregler for FOT)
+5;Modelberegning;t;GIS analyser eller modellering
+6;Tegning;t;Digitaliseret på baggrund af PDF, billede eller andet tegningsmateriale
+7;Felt-/markbesøg;t;Registrering på baggrund af tilsyn i marken
